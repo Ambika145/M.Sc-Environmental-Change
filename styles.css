@@ -2803,3 +2803,116 @@ table td {
   .payment-cards--two { grid-template-columns: 1fr; }
   .payment-option-name { padding-right: 4rem; }
 }
+
+/* === Mobile layout fix (career + overflow) === */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .left-text {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .programme-section,
+  .programme-section .content-wrapper {
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .text-card {
+    max-width: 100% !important;
+    border-radius: 24px !important;
+    border-top-right-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
+  }
+
+  .career-outcomes-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px auto !important;
+    padding: 28px 16px !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    flex-wrap: nowrap !important;
+    gap: 20px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+  }
+
+  .career-left {
+    height: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  .career-left h2 {
+    max-width: 100% !important;
+    font-size: clamp(1.6rem, 7vw, 2rem) !important;
+    text-align: center !important;
+    margin: 0 0 0.5rem !important;
+  }
+
+  .career-right {
+    flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .career-slider-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+  }
+
+  .career-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px !important;
+    overflow: visible !important;
+    margin-bottom: 14px !important;
+    scroll-snap-type: none !important;
+  }
+
+  .career-card {
+    flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .hero-form {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .info-bar {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .swiper,
+  .mySwiper,
+  .feature-card {
+    max-width: 100% !important;
+  }
+
+  .faculty-slider-card,
+  .faculty-slider-desc {
+    max-width: 100% !important;
+  }
+
+  .rec-card {
+    min-width: 0 !important;
+  }
+}
