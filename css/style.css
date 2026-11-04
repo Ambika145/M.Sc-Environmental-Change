@@ -2457,6 +2457,10 @@ section {
   font-weight: 500;
 }
 
+.tuition-table tbody tr.total td {
+  font-weight: 800;
+}
+
 .tuition-fees-note {
   max-width: 1100px;
   margin: 1.25rem auto 0;
@@ -2685,6 +2689,15 @@ section {
     border-radius: 16px;
     background: rgba(15, 18, 80, 0.28);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+
+  .tuition-table tbody tr.total {
+    background: rgba(255, 230, 109, 0.16);
+    border-color: rgba(255, 230, 109, 0.55);
+  }
+
+  .tuition-table tbody tr.total td {
+    font-weight: 800;
   }
 
   .tuition-table tbody tr:last-child {
